@@ -16,7 +16,7 @@ class Renderer:
         torch.cuda.set_device(self.device)
         name = '_ocl_standalone_renderer'
         if name not in sys.modules:
-            spec = importlib.util.spec_from_file_location(name, guard(root/'3DGS重建'/'train_standalone.py'))
+            spec = importlib.util.spec_from_file_location(name, guard(root/'3DGS'/'train_standalone.py'))
             module = importlib.util.module_from_spec(spec)
             sys.modules[name] = module
             try:

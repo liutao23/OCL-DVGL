@@ -144,7 +144,7 @@ def alignment(item, out, report, args):
     return (cameras, geometry)
 
 def fingerprint(item, args):
-    files = [item['ply'], *item['images'], *sorted(Path(__file__).parent.glob('*.py')), args.root / '3DGS重建' / 'train_standalone.py']
+    files = [item['ply'], *item['images'], *sorted(Path(__file__).parent.glob('*.py')), args.root / '3DGS' / 'train_standalone.py']
     if item.get('kml') and item['kml'].is_file() and (args.geometry_source == 'kml'):
         files.append(item['kml'])
     files += [item['json']] if item['json'] else [p for p in guard(item['sparse']).iterdir() if p.suffix in ('.bin', '.txt')]

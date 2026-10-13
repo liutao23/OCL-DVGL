@@ -30,7 +30,7 @@ def source_stamp(item, args):
     code_names=['build_orbit_full.py','prepare_orbit.py','colmap_utils.py','orbit_geometry.py',
                 'render_closure.py','gs_camera.py']
     code=[(name,_code_hash(Path(__file__).with_name(name))) for name in code_names]
-    standalone=args.root/'3DGS重建'/'train_standalone.py'
+    standalone=args.root/'3DGS'/'train_standalone.py'
     code.append(('standalone_renderer',_code_hash(standalone)))
     signatures=[(str(guard(p)),guard(p).stat().st_size,guard(p).stat().st_mtime_ns) for p in files if p and guard(p).is_file()]
     settings=dict(geometry_source=args.geometry_source,min_match_ratio=args.min_match_ratio,

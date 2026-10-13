@@ -65,7 +65,7 @@ def main():
     if a.iterations<1: p.error('--iterations must be positive')
     wanted=set(s.strip() for s in a.scene_ids.split(',') if s.strip()) if a.scene_ids else None
     rows=[]
-    standalone=guard(a.root/'3DGS重建'/'train_standalone.py')
+    standalone=guard(a.root/'3DGS'/'train_standalone.py')
     for sid,image_dir,output in entries(a):
         if wanted and sid not in wanted: continue
         row=dict(scene_id=sid,images_dir=str(image_dir),gs_dir=str(output),status='running')

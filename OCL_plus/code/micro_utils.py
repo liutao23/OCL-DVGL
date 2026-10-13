@@ -19,7 +19,7 @@ def sync(device):
 
 def output_guard(path, root, smoke):
     out = guard(path)
-    for source in (guard(root/'Datasets'), guard(root/'3DGS重建'), guard(root/'OCL_plus'/'code'),
+    for source in (guard(root/'Datasets'), guard(root/'3DGS'), guard(root/'OCL_plus'/'code'),
                    guard(root/'OCL_plus'/'models'), guard(smoke)):
         if out == source or source in out.parents or out in source.parents:
             raise ValueError(f'Output directory overlaps immutable source: {source}')
