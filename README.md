@@ -124,6 +124,7 @@ python OCL_plus/code/eval_ocl_weather.py \
 To evaluate specific weather conditions, add `--weather fog rain snow`. To skip completed conditions, add `--resume`.
 
 The summary results are saved to `OCL_plus/outputs/weather_full_ocl/weather_summary.csv`, and the metrics for each weather condition are saved to `drone_to_satellite/<weather>/metrics.json`.
+<img width="2492" height="1839" alt="qualitative_analysis" src="https://github.com/user-attachments/assets/bc7cabbc-960c-4b55-adc9-5bc69a801cba" />
 
 ## Citation
 
