@@ -133,7 +133,7 @@ If you find this work useful, please consider citing:
 ```bibtex
 @misc{liu2026satellitefreetrainingdroneviewgeolocalization,
       title={Satellite-Free Training for Drone-View Geo-Localization}, 
-      author={Tao Liu and Yingzhi Zhang and Kan Ren and Xiaoqi Zhao},
+      author={Tao Liu and Yingzhi Zhang and Xingrun Wang and Kan Ren and Xiaoqi Zhao},
       year={2026},
       eprint={2604.01581},
       archivePrefix={arXiv},
