@@ -94,6 +94,8 @@ python OCL_plus/code/train_ocl_full.py \
 
 ## Evaluation
 
+**Pretrained weights:** [Download here](https://drive.google.com/file/d/1TTiTi1iQ_5AECJhhQLjx4OifQu8JfE-u/view?usp=drive_link)
+
 Drone → Satellite:
 
 ```bash
